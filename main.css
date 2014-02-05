@@ -157,6 +157,13 @@ color:yellow;
 	color:black;
 }
 
+.panellist {
+	background-color:red;
+}
+
+.panellist li {
+	background-color:yellow;
+}
 
 
 
