@@ -1,29 +1,38 @@
 
 $(document).ready(function(){
 
-    $("#additem").click(function(){
-        var newitem = $("#textbar").val();
-        console.log (newitem)
-        $("#listpanel").text(newitem)
-    });
+    $("#addItem").on('click' , addItem);
 
-$("#textbar").on('keypress', function(e) {
+    $("#listItem").on('keypress', function(e) {
         if (e.which == 13) {
             e.preventDefault();
-            var newitem = $("#textbar").val();
-            console.log(newitem)
-            $("#listpanel").text(newitem)
+           addItem();
         }
-    });
+});
 
 
-
-
-
-
+    function addItem() {
+    var itemText = $("#listItem").val();
+    var item = $("<li />", { text: itemText });
+    $("#list").append(item);
+    $("#listItem").val('');
+}
 
 
 });
+
+$("ul#list").on('click', 'li', function() {
+        $(this).toggleClass('strike');
+    });
+
+
+
+
+
+
+ 
+
+
 
 
 

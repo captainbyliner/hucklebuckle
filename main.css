@@ -127,7 +127,7 @@ color:yellow;
 	color:white;
 }
 
-#textbar {
+#listItem{
 	border: 2px solid silver;
 	width:150px;
 	height:25px;
@@ -137,7 +137,7 @@ color:yellow;
 
 }
 
-#additem {
+#addItem {
 	width:50px;
 	height:50px;	
 	background-color:green;
@@ -145,7 +145,7 @@ color:yellow;
 	margin-left:10px;
 }
 
-#listpanel {
+#listcontainer {
 	height:300px;
 	width:250px;
 	font-size:14px;
@@ -156,13 +156,17 @@ color:yellow;
 	color:black;
 }
 
-.panellist {
+#list {
 	background-color:red;
 	height:200px;
 }
 
-.panellist li {
-	background-color:yellow;
+#list li {
+	background-color:green;
+}
+
+.strike {
+	text-decoration: line-through;
 }
 
 
