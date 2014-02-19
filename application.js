@@ -12,11 +12,12 @@ $(document).ready(function(){
 
 
     function addItem() {
-    var itemText = $("#listItem").val();
+    var itemText = $.trim( $("#listItem").val() );
     var item = $("<li />", { text: itemText, title: "Double click to remove from list."});
     $("#list").append(item);
     $("#listItem").val('');
 }
+
 
 
 });
