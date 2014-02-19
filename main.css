@@ -201,18 +201,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 	display:none;
 }
 
-#listcontainer {
-	height:300px;
-	width:250px;
-	font-size:14px;
-	margin-right:auto;
-	margin-left:auto;
-	font-size:22px;
-	color:black;
+#saleItem:hover {
+	background-color:green;
 }
+
 
 #list {
 	height:200px;
+	color:black;
 }
 
 #list li {
